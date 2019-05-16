@@ -1,0 +1,12 @@
+{
+  "name": "lightchain-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "1.0.0-beta.37"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
