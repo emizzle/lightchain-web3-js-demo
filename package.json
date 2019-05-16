@@ -8,5 +8,10 @@
   },
   "scripts": {
     "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=7.10.1",
+    "npm": ">=6.4.1",
+    "yarn": ">=1.12.3"
   }
 }
