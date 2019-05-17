@@ -19,8 +19,9 @@ The demo performs the following functions:
 In a terminal, initialise and start a lightchain node
 ```
 lightchain init --standalone --force
-lightchain run --rpc --rpcport=8545 --rpcaddr=localhost --rpcapi=eth,web3,net,debug,personal,shh --ws --wsport=8546 --wsaddr=localhost
+lightchain run --rpc --rpcport=8545 --rpcaddr=localhost --rpccorsdomain=*,http://localhost:8000,http://localhost:8080,http://embark --rpcapi=eth,web3,net,debug,personal,shh --ws --wsport=8546 --wsaddr=127.0.0.1 --wsapi=eth,web3,net,shh,debug,pubsub,personal --wsorigins=*,http://localhost:8000,http://localhost:8080,http://embark
 ```
+Obviously the RPC and WS ports, cors/origins, and apis, can be customised as per usual geth. The above command is used for use in an Embark project, hence the values.
 
 ## Run the demo
 In another terminal, install dependencies, then run the demo
